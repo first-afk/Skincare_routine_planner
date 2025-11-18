@@ -12,8 +12,8 @@ const Routine = ({ formAnswers }) => {
 
   return (
     <div className="routine-container m-5">
-      <div className="flex justify-evenly">
-        <h2>Your Personalized Skincare Routine</h2>
+      <div className="justify-evenly p-5 items-center mb-5">
+        <h2 className="font-semibold">Your Personalized Skincare Routine</h2>
         <p className="capitalize">Skin Type: {skinType}</p>
       </div>
 
@@ -41,15 +41,15 @@ const Routine = ({ formAnswers }) => {
       {setMorning ? (
         <div className="morning-routine mb-8">
           <table className="min-w-full border-collapse">
-            <thead className="bg-slate-50">
+            <thead className="bg-slate-50 text-center">
               <tr>
-                <th className="py-3 px-4 text-left border-b-2 border-gray-200 w-16">
+                <th className="py-3 px-4 border-b-2 border-gray-200 w-16">
                   Step
                 </th>
-                <th className="py-3 px-4 text-left border-b-2 border-gray-200 w-1/3">
+                <th className="py-3 px-4 border-b-2 border-gray-200 w-1/3">
                   Product
                 </th>
-                <th className="py-3 px-4 text-left border-b-2 border-gray-200">
+                <th className="py-3 px-4 border-b-2 border-gray-200">
                   Description
                 </th>
               </tr>
@@ -73,15 +73,15 @@ const Routine = ({ formAnswers }) => {
       ) : (
         <div className="evening-routine">
           <table className="min-w-full border-collapse">
-            <thead className="bg-slate-50">
+            <thead className="bg-slate-50 text-center">
               <tr>
-                <th className="py-3 px-4 text-left border-b-2 border-gray-200 w-16">
+                <th className="py-3 px-4 border-b-2 border-gray-200 w-16">
                   Step
                 </th>
-                <th className="py-3 px-4 text-left border-b-2 border-gray-200 w-1/3">
+                <th className="py-3 px-4 border-b-2 border-gray-200 w-1/3">
                   Product
                 </th>
-                <th className="py-3 px-4 text-left border-b-2 border-gray-200">
+                <th className="py-3 px-4 border-b-2 border-gray-200">
                   Description
                 </th>
               </tr>

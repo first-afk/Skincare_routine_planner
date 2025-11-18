@@ -70,19 +70,19 @@ const Header = () => {
 
   return (
     <>
-      <section className="h-[100vh] w-[100%] flex flex-row justify-between relative">
+      <section className="h-[100vh] w-[100%] flex flex-row justify-between relative bg-cover bg-left" style={{backgroundImage: `url(${wellosophy})`}}>
         <div
           className={`flex justify-end ${position} p-5 top-5 left-0 right-0 ${backgroundColor} transition-all duration-300 ease-in-out z-99`}
         >
           <ul
-            className={`hidden md:flex gap-15 text-2xl uppercase mr-[6rem] ${
+            className={`hidden md:flex gap-15 text-xl uppercase mr-[6rem] ${
               backgroundColor === "bg-transparent" ? "text-slate-50" : ""
             }`}
           >
             <li>Shop</li>
             <li>About</li>
             <li>Contact</li>
-            <li onClick={toggleSidePanel}>Cart ({cartItems.length})</li>
+            <li className="cursor-pointer" onClick={toggleSidePanel}>Cart ({cartItems.length})</li>
           </ul>
           <div
             className={`md:hidden mr-[1rem] ${
@@ -142,12 +142,6 @@ const Header = () => {
             </div>
           </div>
         </div>
-
-        <img
-          src={wellosophy}
-          alt=""
-          className="h-[100vh] w-full object-cover"
-        />
       </section>
     </>
   );

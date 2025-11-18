@@ -4,9 +4,15 @@
   /* max-width: 1280px; */
   margin: 0 auto;
   color: #363636;
-  background: #EBEBEB;
+  background: #ebebeb;
 }
 
+button {
+  cursor: pointer;
+}
+h2 {
+  font-size: 2rem;
+}
 .question {
   /* margin-top: 1rem; */
   margin-bottom: 1rem;
@@ -27,30 +33,17 @@
   color: #fff;
 }
 :disabled {
-  background-color: #f9f9f9;
-  border: 1px solid #f9f9f9;
-  color: #333;
   cursor: not-allowed;
-}
-
-.form-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 15px;
-  height: 22rem auto;
-  font-size: x-large;
 }
 
 .small-formcontainer {
   box-sizing: border-box;
   justify-items: center;
   margin: 4px;
-  border: 4px solid #363636;
+  border-bottom: 4px solid #363636;
   border-radius: 10px;
   height: 21rem auto;
-  width: 35em;
+  width: 35em auto;
 }
 
 .about {
@@ -124,7 +117,6 @@
   }
   button {
     font-size: 1rem;
-    margin-top: 0;
   }
   .heading {
     font-size: 2rem;
@@ -149,7 +141,7 @@
     margin: 2em;
   }
   h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .grid-section img {
     margin: 0;
@@ -161,12 +153,15 @@
   }
   p,
   li {
-    font-size: 24px;
+    font-size: 18px;
     padding: 1fr;
     line-height: normal;
     font-weight: lighter;
   }
   .absolute-grid .list {
     justify-items: center;
+  }
+  .input-label {
+    font-size: 12px;
   }
 }

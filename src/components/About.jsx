@@ -47,7 +47,7 @@ const About = ({ productItems }) => {
           <div className="heading m-4 text-6xl/16 font-thin capitalize">
             <h3>we believe in creating easier pathways to social impact</h3>
           </div>
-          <div className="body line-clamp-2 md:line-clamp-none font-thin text-4xl m-3 py-4">
+          <div className="body line-clamp-2 md:line-clamp-none font-thin text-2xl m-3 py-4">
             <p>
               We start by donating 10% of profits to the causes you care about
               most, but that’s just the beginning. Whether you have just a
@@ -56,7 +56,7 @@ const About = ({ productItems }) => {
             </p>
           </div>
           <div className="m-4">
-            <button className="capitalize text-2xl border-b-2 border-[#363636]">
+            <button className="capitalize text-xl border-b-2 border-[#363636]">
               learn more
             </button>
           </div>
@@ -75,22 +75,24 @@ const About = ({ productItems }) => {
               <div key={item.id} className="product-card">
                 <div className="product-card__image">
                   <img
-                    className="h-[100%] w-[100%]"
+                    className="h-20 w-[10%] md:h-[100%] md:w-[100%]"
                     src={image1}
                     alt="product"
                   />
                 </div>
                 <div className="product-card__content mt-4">
                   <div className="flex justify-between">
-                    <h3 className="uppercase font-thin text-3xl">
+                    <h3 className="uppercase font-thin text-2xl">
                       {item.name}
                     </h3>
-                    <h3 className="font-thin text-3xl">${item.price}</h3>
+                    <h3 className="font-thin text-2xl">${item.price}</h3>
                   </div>
-                  <p className="font-light mt-2">product description</p>
+                  <p className="font-light capitalize text-xl mt-2">
+                    product description
+                  </p>
                   <button
                     onClick={() => handleAddToCart(item)}
-                    className="uppercase font-thin mt-5  border-b-2 border-[#363636]"
+                    className="uppercase font-thin mt-5 text-xl border-b-2 border-[#363636]"
                   >
                     add to cart
                   </button>
@@ -148,7 +150,7 @@ const About = ({ productItems }) => {
                 className="h-[70vh] w-[60vh] object-cover md:absolute md:-top-[30%] md:left-[12%] z-40"
               />
             </div>
-            <div className="list text-4xl mb-5 md:mb-20 capitalize order-first md:order-last">
+            <div className="list text-2xl md:mt-5 md:mb-20 capitalize order-first md:order-last p-5">
               <ol className="list-inside list-disc">
                 <li className="p-2">10% profit</li>
                 <li className="p-2">vegan + cruelty free</li>
@@ -159,11 +161,11 @@ const About = ({ productItems }) => {
             </div>
           </div>
           <div className="grid absolute-grid grid-cols-1 md:grid-cols-2 items-center mx-auto ">
-            <div className="text-4xl">
-              <h2 className="uppercase md:text-4xl text-5xl ">
+            <div className="p-5">
+              <h2 className="uppercase md:text-3xl text-4xl ">
                 now supporting: <br /> community development
               </h2>
-              <p className="md:text-xl/6 mt-3 md:mt-6 md:w-4/5">
+              <p className="mt-3 md:mt-6 md:w-4/5 mb-4">
                 Together we'll work towards bettering the quality of life,
                 opportunity and well-being in the places we live.
               </p>
@@ -182,8 +184,6 @@ const About = ({ productItems }) => {
           </div>
         </div>
       </section>
-
-      
     </>
   );
 };

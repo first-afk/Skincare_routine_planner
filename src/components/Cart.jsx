@@ -53,8 +53,8 @@ const Cart = () => {
     <>
       <Toaster />
       <div className="p-5 mb-5 border-b-2 border-[#363636]">
-        <h1 className="text-4xl font-bold uppercase font-light">
-          <span className="lowercase">your</span> Cart ({cartItems.length})
+        <h1 className="text-4xl font-bold capitalize">
+          your Cart ({cartItems.length})
         </h1>
       </div>
       {cartContent ? (
@@ -85,7 +85,7 @@ const Cart = () => {
           ))}
         </div>
       ) : (
-        <div>
+        <div className="capitalize">
           <h1>Cart is empty</h1>
         </div>
       )}

@@ -42,7 +42,7 @@ const question = [
   },
   {
     id: 5,
-    question: "Do you currently use sunscreen?",
+    question: "Do you use sunscreen?",
     options: [
       { id: 1, value: "yes" },
       { id: 2, value: "sometimes" },

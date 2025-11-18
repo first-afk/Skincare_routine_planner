@@ -5,12 +5,12 @@ import { FaFacebook, FaTiktok } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-      <footer className="bg-[#363636] text-slate-50 pt-[3rem] mt-[3rem] h-auto">
+      <footer className="bg-[#363636] text-slate-50 pt-[3rem] mt-[3rem] h-auto p-15">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 uppercase text-xl justify-self-center">
           <div className="md:col-span-2 justify-self-center ">
-            <h3 className="text-4xl w-2/3 font-extralight">social impact starts <span className="lowercase italic">in your</span> inbox</h3>
+            <h3 className="text-xl md:text-4xl w-2/3 font-extralight">social impact starts <span className="lowercase italic">in your</span> inbox</h3>
             <div className="my-15 input">
-              <input type="email" name="email" id="email" placeholder=" " className="border-slate-50 uppercase text-slate-50 input-field"/>
+              <input type="email" name="email" id="email" placeholder=" " className="border-slate-50  text-slate-50 input-field"/>
                 <label htmlFor="email" className="input-label">email address</label>
                 <button type="submit" className="absolute left-[77%] submit-btn"><BsArrowRight /></button>
             </div>
@@ -35,7 +35,7 @@ const Footer = () => {
               <li className="p-1">contact us</li>
             </ul>
             <div className="my-10">
-              <h3>made by nice people</h3>
+              <h3>made by esther</h3>
             </div>
           </div>
         </div>

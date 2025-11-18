@@ -16,9 +16,11 @@ function App() {
       </div>
       <Header />
       <About productItems={cartItems} />
+      <div className=" bg-amber-50">
       <Form questions={question}/>
       <Carosel />
       <Footer />
+      </div>
     </CartProvider>
   );
 }
